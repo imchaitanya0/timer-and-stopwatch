@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer and Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Timer and Stopwatch</h1>
+      <div class="timer">
+        <h2>Timer</h2>
+        <div class="input-container">
+          <label for="timer-hours">Hours:</label>
+          <input type="number" id="timer-hours" min="0" max="24" value="0">
+          <label for="timer-minutes">Minutes:</label>
+          <input type="number" id="timer-minutes" min="0" max="60" value="0">
+          <label for="timer-seconds">Seconds:</label>
+          <input type="number" id="timer-seconds" min="0" max="60" value="0">
+        </div>
+        <button id="timer-start">Start</button>
+        <button id="timer-pause" disabled>Pause</button>
+        <button id="timer-reset" disabled>Reset</button>
+        <div id="timer-display"></div>
+      </div>
+      <div class="stopwatch">
+        <h2>Stopwatch</h2>
+        <div class="input-container">
+        <!--  <label for="stopwatch-minutes">Minutes:</label>
+          <input type="number" id="stopwatch-minutes" min="0" max="60" value="0">
+          <label for="stopwatch-seconds">Seconds:</label>
+          <input type="number" id="stopwatch-seconds" min="0" max="60" value="0">-->
+        </div>
+        <button id="stopwatch-start">Start</button>
+        <button id="stopwatch-pause" disabled>Pause</button>
+        <button id="stopwatch-reset" disabled>Reset</button>
+        <div id="stopwatch-display">00:00:00</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
